@@ -1,0 +1,25 @@
+name: greeter-release
+version: 0+dev.1
+commit_hash: non-git
+uncommitted_changes: false
+jobs:
+- name: app
+  version: 320191eeea20c83c5edb7738afe592ac143c63ca
+  fingerprint: 320191eeea20c83c5edb7738afe592ac143c63ca
+  sha1: 93a0383557f76ee3babf7c269a5546917545ec44
+- name: router
+  version: 9bc3d634548f5da4c9673b8b125589cc0af3303b
+  fingerprint: 9bc3d634548f5da4c9673b8b125589cc0af3303b
+  sha1: e3e4acb76b34d74a04f15afe291da1a29e960c29
+packages:
+- name: greeter
+  version: 0a45c91869d436aa1b1301f3f68a944a1f312dde
+  fingerprint: 0a45c91869d436aa1b1301f3f68a944a1f312dde
+  sha1: 0fa2f12d39838cb6a4e2907672b6c22bd2a39bc7
+  dependencies:
+  - ruby
+- name: ruby
+  version: bc170d2e7b0f239d3b26fd05b49a9263d3187e08
+  fingerprint: bc170d2e7b0f239d3b26fd05b49a9263d3187e08
+  sha1: 05e84e70e3c4b700a28d139730b7db473652096d
+  dependencies: []

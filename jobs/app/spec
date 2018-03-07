@@ -1,0 +1,13 @@
+---
+name: app
+templates:
+  ctl: bin/ctl
+
+packages:
+- greeter
+- ruby-2.4-r3
+
+properties:
+  port:
+    description: "Port on which server is listening"
+    default: 8080

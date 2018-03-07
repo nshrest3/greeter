@@ -1,0 +1,11 @@
+set -e
+
+cp -r greeter/* ${BOSH_INSTALL_TARGET}
+
+cd ${BOSH_INSTALL_TARGET}
+
+find .
+
+mkdir -p ${BOSH_INSTALL_TARGET}/gem_home
+
+/var/vcap/packages/ruby-2.4-r3/bin/bundle install --local --no-prune --path ${BOSH_INSTALL_TARGET}/gem_home

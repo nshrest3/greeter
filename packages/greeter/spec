@@ -1,0 +1,6 @@
+---
+name: greeter
+dependencies:
+- ruby-2.4-r3
+files:
+- greeter/**/*
